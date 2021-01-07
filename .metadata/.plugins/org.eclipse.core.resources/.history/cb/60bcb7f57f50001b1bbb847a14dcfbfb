@@ -1,0 +1,5 @@
+package com.example.nalin.clienteConsumidor.controller;
+
+public class ProdutoController {
+
+}

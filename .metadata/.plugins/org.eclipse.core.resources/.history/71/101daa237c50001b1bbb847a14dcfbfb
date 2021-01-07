@@ -1,0 +1,18 @@
+package com.example.nalin.clienteFornecedor.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.nalin.clienteFornecedor.model.Produto;
+
+@RestController
+@RequestMapping("produtos")
+public class ProdutoController {
+	
+	@GetMapping("/{id}")
+	public Produto getProduto(@PathVariable String id) {
+		return new Produto(id);
+	}
+}
